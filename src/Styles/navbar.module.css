@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  background-color: #020a22;
+  color: #fff;
+  height: 40px;
+  /* line-height: 40px; */
+  padding: 10px;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+
+}
+a{
+  text-decoration: none;
+}
+li {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li:hover {
+  text-decoration: underline;
+  
+}

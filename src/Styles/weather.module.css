@@ -1,0 +1,52 @@
+.container{
+    text-align: center;
+}
+.container p{
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: red;
+}
+input{
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    counter-reset:#020a22 ;
+    font-weight: bold;
+    outline: none;
+    font-size: 20px;
+    display: block;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+button{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#020a22 ;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cart h1{
+    background-color: #020a22;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+}
+.cart{
+    background-color: #fff;
+    color:#020a22;
+    border-radius: 10px;
+    margin: 10px;
+}
+.info{
+    padding: 10px;
+}
+
+.cart span{
+    font-weight: bold;
+}

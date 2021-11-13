@@ -19,6 +19,7 @@ const Weather = () => {
       .get(url)
       .then((response) => response.data)
       .then((data) => setWeather([...weather, data]));
+      setName("")
   };
   console.log(weather);
 

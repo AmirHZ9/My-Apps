@@ -1,7 +1,7 @@
 import React,{useEffect, useState} from 'react';
 import {v4} from "uuid"
 import Todo from './Todo';
-import  "../Styles/todo.css"
+import  styles from "../Styles/todo.module.css"
 const TodoApp = () => {
     const [data, setData] = useState("" )
     const [todos , setTodo] = useState([])
@@ -57,11 +57,11 @@ const TodoApp = () => {
     }
     return (
         <div>
-            <div className='todo_container'>
-            <div className="todo_main">
+            <div className={styles.todo_container}>
+            <div className={styles.todo_main}>
             <input type="text" value={data} onChange={changehandler}/>
             <button onClick={addtodo}>Add</button>
-            <select name="todo" className="todoselect" onChange={statushandler}>
+            <select name="todo" className={styles.todoselect} onChange={statushandler}>
                 <option value="All">All</option>
                 <option value="completed">Completed</option>
                 <option value="uncompleted">Uncompleted</option>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
-import  "../Styles/todo.css"
+import styles from "../Styles/todo.module.css"
 
 
 
@@ -26,10 +26,10 @@ const Todo = ({text,todo , todos , setTodo}) => {
     
 
     return (
-        <div className='todos'>
-            <p className={`${todo.completed ? "completed" : ""}`}>{text}</p>
-            <button className='check' onClick={checkhandler}><i className="fa fa-check "></i></button>
-            <button className='times' onClick={delethandler}><i className="fa fa-times times"></i></button>
+        <div className={styles.todos}>
+            <p className={todo.completed ? styles.completed : " "}>{text}</p>
+            <button className={styles.check} onClick={checkhandler}><i className="fa fa-check "></i></button>
+            <button className={styles.times} onClick={delethandler}><i className="fa fa-times times"></i></button>
            
         </div>
     );

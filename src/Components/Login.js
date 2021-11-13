@@ -1,4 +1,5 @@
 import React , { useEffect, useState } from 'react';
+import styles from "../Styles/signup.module.css"
 import {Link} from "react-router-dom"
 import { validate } from './validate';
 const Login = () => {
@@ -28,26 +29,31 @@ const Login = () => {
     }
     return (
         <div>
-                <div>
+                <div className={styles.container}>
                 <form>
-                    <div>
+                    <div className={styles.item}>
                         <label>Email</label>
                         <input type="text" name="email" value={data.email} onChange={changehandler} onFocus={focushandler}/>
                         {errors.email && touched.email && <span>{errors.email}</span>}
                     </div>
-                    <div>
+                    <div className={styles.item}>
                         <label>Password</label>
                         <input type="password" name="password" value={data.password} onChange={changehandler} onFocus={focushandler}/>
                         {errors.password && touched.password && <span>{errors.password}</span>}
                     </div>
                   
-                    <div>
+                     <div className={styles.checkbox}>
+                        <div className={styles.checkboxlabel}>
                         <label>Accept privacy and policy</label>
                         <input type="checkbox" name="checkbox" value={data.checkbox} onChange={changehandler} onFocus={focushandler}/>
+                        </div>
                         {errors.checkbox && touched.checkbox && <span>{errors.checkbox}</span>}
                     </div>
+                    <div className={styles.buttons }>
                         <Link to="/SignUp">SignUp</Link>
                         <button>Login</button>
+
+                    </div>
                 </form>
             </div>
         </div>

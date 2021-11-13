@@ -53,13 +53,12 @@ const SignUpForm = () => {
                         <input type="password" name="confirmpassword" value={data.confirmpassword} onChange={changehandler} onFocus={focushandler}/>
                         {errors.confirmpassword && touched.confirmpassword && <span>{errors.confirmpassword}</span>}
                     </div>
-                    <div className={styles.item}>
+                    <div className={styles.checkbox}>
+                        <div className={styles.checkboxlabel}>
                         <label>Accept privacy and policy</label>
-                        <div className={styles.checkbox}>
-
                         <input type="checkbox" name="checkbox" value={data.checkbox} onChange={changehandler} onFocus={focushandler}/>
-                        {errors.checkbox && touched.checkbox && <span>{errors.checkbox}</span>}
                         </div>
+                        {errors.checkbox && touched.checkbox && <span>{errors.checkbox}</span>}
                     </div>
                     <div className={styles.buttons}>
                         <Link to="/Login">Login</Link>

@@ -10,6 +10,7 @@ const Navbar = () => {
                    <Link to="/Weather"><li>Weather App</li></Link> 
                    <Link to="/TodoApp"><li>todo app</li></Link> 
                    <Link to="/Signup"><li>SignUp</li></Link> 
+                   <Link to="/Coins"><li>Coins</li></Link> 
                    
                 </ul>
             </div>

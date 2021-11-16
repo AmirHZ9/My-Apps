@@ -21,7 +21,6 @@ const Weather = () => {
       .then((data) => setWeather([...weather, data]));
       setName("")
   };
-  console.log(weather);
 
   return (
     <div className={styles.container}>
